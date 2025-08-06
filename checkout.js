@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }));
         
         try {
-            const response = await fetch('http://localhost:3000/api/products/update-stock', {
+            const response = await fetch('https://site-dutrashop-backend.onrender.com/api/products/update-stock', {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json', },
                 body: JSON.stringify({ items: orderItems }),
