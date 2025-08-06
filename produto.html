@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando Produto...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+             <a href="index.html" class="logo">DevShop</a>
+            <nav class="main-nav">
+                <a href="index.html">Loja</a>
+                <a href="favoritos.html">Favoritos</a>
+            </nav>
+            <a href="carrinho.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="product-detail-container">
+            <p>Carregando...</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DevShop. Feito com <i class="fas fa-heart"></i> e muito código.</p>
+        </div>
+    </footer>
+    
+    <div id="toast-notification"></div>
+
+    <script type="module" src="scripts/main-produto.js"></script>
+</body>
+</html>

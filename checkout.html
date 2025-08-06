@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - DutraShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">DutraShop</a>
+        </div>
+    </header>
+
+    <main class="container checkout-container">
+        <div class="form-column">
+            <h2>Quase lá! Complete seus dados</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <h3>Dados Pessoais</h3>
+                    <div class="input-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>Endereço de Entrega</h3>
+                    <div class="input-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" placeholder="Apenas números" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Endereço</label>
+                        <input type="text" id="address" required>
+                    </div>
+                     <div class="input-group">
+                        <label for="number">Número</label>
+                        <input type="text" id="number" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>Forma de Pagamento</h3>
+                    <div class="payment-methods">
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="credit-card" checked>
+                            <i class="fas fa-credit-card"></i> Cartão de Crédito
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="pix">
+                            <i class="fa-brands fa-pix"></i> PIX
+                        </label>
+                    </div>
+                    
+                    <div id="credit-card-info">
+                         <div class="input-group">
+                            <label for="card-number">Número do Cartão</label>
+                            <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
+                        </div>
+                         <div class="input-group">
+                            <label for="card-name">Nome no Cartão</label>
+                            <input type="text" id="card-name" placeholder="Como está escrito no cartão">
+                        </div>
+                        <div class="flex-group">
+                            <div class="input-group">
+                                <label for="card-expiry">Validade (MM/AA)</label>
+                                <input type="text" id="card-expiry" placeholder="MM/AA">
+                            </div>
+                            <div class="input-group">
+                                <label for="card-cvv">CVV</label>
+                                <input type="text" id="card-cvv" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="pix-info" style="display: none;">
+                        <p>Pague com PIX para aprovação imediata.</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pix_logo.svg/1200px-Pix_logo.svg.png" alt="QR Code PIX" class="pix-qr">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Finalizar e Pagar</button>
+            </form>
+        </div>
+
+        <div class="summary-column">
+            <h3>Resumo do Pedido</h3>
+            <div id="summary-items" class="summary-items">
+                </div>
+            <div class="summary-total">
+                <div class="total-line">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">R$ 0,00</span>
+                </div>
+                <div class="total-line">
+                    <span>Frete</span>
+                    <span id="summary-shipping">R$ 15,00</span>
+                </div>
+                <div class="total-line grand-total">
+                    <span>Total</span>
+                    <span id="summary-grand-total">R$ 0,00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="checkout.js"></script>
+</body>
+</html>

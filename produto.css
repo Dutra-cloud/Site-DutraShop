@@ -1,0 +1,76 @@
+/* Estilos específicos para a página de detalhes do produto */
+
+.product-detail {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.product-detail-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.product-detail-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-detail-info {
+    flex: 1;
+}
+
+.product-detail-info .product-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.product-detail-info .product-rating {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.product-detail-info .product-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+.product-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-description p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.add-to-cart-btn-detail {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn-detail:hover {
+    background-color: #27ae60;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .product-detail {
+        flex-direction: column;
+    }
+}
